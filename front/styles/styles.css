@@ -32,6 +32,11 @@ header {
   letter-spacing: -0.27px;
   line-height: 22.5px;
   white-space: nowrap;
+  text-decoration: none;
+}
+
+.titulo-logo:hover {
+  text-decoration: underline;
 }
 
 .menu {
@@ -63,6 +68,11 @@ header {
   letter-spacing: -0.27px;
   line-height: 22.5px;
   white-space: nowrap;
+  text-decoration: none;
+}
+
+.texto-header:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -73,6 +83,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  flex: 1;
 }
 
 .container-bienvenida {
@@ -189,6 +200,7 @@ main {
   justify-content: center;
   align-items: flex-start;
   flex-shrink: 0;
+  margin-top: auto;
 }
 
 .container-footer {

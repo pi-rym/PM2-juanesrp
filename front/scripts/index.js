@@ -56,12 +56,14 @@ function crearCard({ title, year, director, duration, genre, rate, poster }) {
   return contenedor;
 }
 
-const contenedor = document.querySelector(".container-peliculas");
+$.get("https://students-api.2.us-1.fl0.io/movies", (data) => {
+  const contenedor = document.querySelector(".container-peliculas");
 
-contenedor.innerHTML = "";
+  contenedor.innerHTML = "";
 
-const elementosHTML = tempData.map((elemento) => crearCard(elemento));
+  const elementosHTML = data.map((elemento) => crearCard(elemento));
 
-elementosHTML.forEach((elemento) => {
-  contenedor.appendChild(elemento);
+  elementosHTML.forEach((elemento) => {
+    contenedor.appendChild(elemento);
+  });
 });
