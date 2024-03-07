@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Proyecto Modulo 2</title>
   </head>
@@ -31,10 +52,70 @@
       </div>
     </header>
     <main>
-      <div class="container-bienvenida">
-        <div class="container-texto">
-          <h1 class="titulo-bienvenida">Bienvenidos a Cinephile</h1>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner imagen-cine">
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/cine1.jpeg"
+              alt="bienvenida"
+              class="d-block img-thumbnail w-70"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/cine2.jpeg"
+              alt="sala"
+              class="d-block img-thumbnail w-70"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/cine3.jpeg"
+              alt="cine"
+              class="d-block img-thumbnail w-70"
+            />
+          </div>
         </div>
+      </div>
+      <div class="w-75">
+        <h3 class="text-center m-4">Historia del cine</h3>
+        <p class="bg-body">
+          La historia del cine es un relato fascinante que se remonta a finales
+          del siglo XIX, cuando los pioneros del arte visual comenzaron a
+          experimentar con la tecnología del movimiento. Desde sus modestos
+          comienzos con películas mudas y simples escenas de la vida cotidiana,
+          el cine ha evolucionado hasta convertirse en una de las formas de arte
+          más influyentes y populares del mundo.
+        </p>
+        <p>
+          A lo largo del tiempo, el cine ha sido testigo de una serie de
+          innovaciones tecnológicas y estilísticas que han ampliado sus
+          horizontes y han permitido a los cineastas contar historias de formas
+          cada vez más creativas. Desde el advenimiento del sonido en la década
+          de 1920 hasta el desarrollo de efectos visuales de vanguardia en la
+          actualidad, el cine ha estado en constante evolución, adaptándose a
+          los gustos cambiantes del público y a los avances en la tecnología.
+        </p>
+        <p>
+          Además de su importancia como forma de entretenimiento, el cine
+          también ha desempeñado un papel crucial en la exploración de temas
+          sociales, políticos y culturales. Desde películas que abordan
+          cuestiones de justicia social y derechos humanos hasta aquellas que
+          celebran la diversidad cultural y la creatividad artística, el cine
+          tiene el poder de inspirar, educar y provocar reflexión.
+        </p>
+        <p>
+          En resumen, la historia del cine es un viaje apasionante a través del
+          tiempo y el espacio, lleno de momentos memorables, figuras legendarias
+          y obras maestras del arte cinematográfico. A medida que el cine
+          continúa evolucionando en el siglo XXI, su legado perdura como una
+          fuente inagotable de inspiración y asombro para generaciones presentes
+          y futuras.
+        </p>
       </div>
     </main>
     <footer class="footer">
