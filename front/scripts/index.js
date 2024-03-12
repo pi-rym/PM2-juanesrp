@@ -6,12 +6,14 @@ const renderCards = () => {};
 
 const fetchMovies = async () => {
   try {
-    const data = await axios.get("https://students-api.up.railway.app/movies");
+    const { data } = await axios.get(
+      "https://students-api.up.railway.app/movies"
+    );
     const contenedor = document.querySelector(".container-peliculas");
 
     contenedor.innerHTML = "";
 
-    const elementosHTML = data.data.map((elemento) => crearCard(elemento));
+    const elementosHTML = data.map((elemento) => crearCard(elemento));
 
     elementosHTML.forEach((elemento) => {
       contenedor.appendChild(elemento);
