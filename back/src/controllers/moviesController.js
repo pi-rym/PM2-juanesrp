@@ -9,4 +9,13 @@ module.exports = {
       res.status(500).json({ error: "Error interno del servidor " });
     }
   },
+
+  createMovie: async (req, res) => {
+    try {
+      await moviesService.postMovies(req.body);
+      res.status(201).json("Película creada exitosamente");
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  },
 };
