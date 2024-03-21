@@ -9,14 +9,12 @@ const url = document.getElementById("form-poster");
 const genres = document.querySelectorAll("input[name='genre']");
 
 const postMovie = async (movie) => {
-  await axios
-    .post("http://localhost:3000/movies", movie)
-    .then((res) => {
-      console.log("Película creada correctamente");
-    })
-    .catch((error) => {
-      console.log("error al crear pelicula");
-    });
+  try {
+    await axios.post("http://localhost:3000/movies", movie);
+    alert("La película ha sido creada");
+  } catch (error) {
+    console.log("error al crear pelicula");
+  }
 };
 
 const validateGenres = () => {
