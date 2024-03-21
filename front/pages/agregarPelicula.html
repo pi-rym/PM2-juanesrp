@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/reset.css" />
-    <link rel="stylesheet" href="../styles/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../styles/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Proyecto Modulo 2</title>
   </head>
@@ -117,6 +117,7 @@
                               type="number"
                               class="form-control"
                               id="form-year"
+                              min="1890"
                             />
                           </div>
                         </div>
@@ -134,6 +135,8 @@
                               step="0.1"
                               class="form-control"
                               id="form-rate"
+                              min="1"
+                              max="10"
                             />
                           </div>
                         </div>
@@ -165,12 +168,117 @@
                         <label for="form-genre" class="col-sm-2 col-form-label"
                           >Genero</label
                         >
-                        <div class="col-sm-10">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="form-genre"
-                          />
+                        <div class="col-sm-10 dropdown">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Selecciona los generos a los que pertenece
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton"
+                          >
+                            <li>
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value="Action"
+                                id="Action"
+                                name="genre"
+                              />
+                              <label class="form-check-label" for="Action"
+                                >Action</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value="Fantasy"
+                                id="Fantasy"
+                                name="genre"
+                              />
+                              <label class="form-check-label" for="Fantasy"
+                                >Fantasy</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value="Thriller"
+                                id="Thriller"
+                                name="genre"
+                              />
+                              <label class="form-check-label" for="Thriller"
+                                >Thriller</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value="Romance"
+                                id="Romance"
+                                name="ganre"
+                              />
+                              <label class="form-check-label" for="Romance"
+                                >Romance</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value="Adventure"
+                                id="Adventure"
+                                name="genre"
+                              />
+                              <label class="form-check-label" for="Adventure"
+                                >Adventure</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value="Comedy"
+                                id="Comedy"
+                                name="genre"
+                              />
+                              <label class="form-check-label" for="Comedy"
+                                >Comedy</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value="Sci-Fi"
+                                id="Sci-Fi"
+                                name="genre"
+                              />
+                              <label class="form-check-label" for="Sci-Fi"
+                                >Sci-Fi</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value="Drama"
+                                id="Drama"
+                                name="genre"
+                              />
+                              <label class="form-check-label" for="Drama"
+                                >Drama</label
+                              >
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -202,7 +310,7 @@
                     </div>
                     <div class="col-md-6 d-flex justify-content-end">
                       <input
-                        type="submit"
+                        type="button"
                         class="btn btn-danger btn-send pt-2 btn-block d-flex justify-content-end"
                         value="Limpiar"
                         id="btn-clearForm"
@@ -236,21 +344,12 @@
       </div>
     </footer>
     <!-- <script src="./scripts/tempData.js"></script> -->
+    <!-- Agrega el script de Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../public/bundle.js"></script>
+    <script src="../public/movie.js"></script>
   </body>
 </html>
